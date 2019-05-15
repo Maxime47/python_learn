@@ -24,6 +24,7 @@ Scrapy 使用了 Twisted['twɪstɪd](https://segmentfault.com/a/1190000013178839
 
 **Spider（爬虫）**：它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器)，
 
+**Item Pipeline(管道)**：它负责处理Spider中获取到的Item，并进行进行后期处理（详细分析、过滤、存储等）的地方.
 
 **Downloader Middlewares（下载中间件）**：你可以当作是一个可以自定义扩展下载功能的组件。
 
